@@ -33,17 +33,37 @@ Flow:
 4.	Install AI Explainability 360 Toolkit, Adversarial Robustness Toolbox, AI Fairness 360 in the Watson Studio Notebook.
 5.	Visualization for explainability and interpretability of AI Model for the three different types of Users.
 
+### About this Series:
 
-This series demonstrates the AI 360 toolkit in detail and how do we use this IBM toolkit to solve AI use-cases. How to build end to end AI model pipeline and make them transparent. How can we make the AI models explainable for the outcome and how do we ensure that AI models are not biased in their decision making. How do we build robust models which can predict with good accuracy on new datasets without retraining. This series will be for everyone who wants to understand the working of AI models and also make it explainable to the layman. This series will have wider applicability across multiple domains.
+The Series demonstrates the AI 360 toolkit in detail and how do we use this IBM toolkit to solve AI use-cases. How to build end to end AI model pipeline and make them transparent. How can we make the AI models explainable for the outcome and how do we ensure that AI models are not biased in their decision making. How do we build robust models which can predict with good accuracy on new datasets without retraining. This series will be for everyone who wants to understand the working of AI models and also make it explainable to the layman. This series will have wider applicability across multiple domains.
 
-[AI 360 toolkit - How do we identify & remove bias from AI models
+- [AI 360 toolkit - How do we identify & remove bias from AI models
 ](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5283): The First Code Pattern in the series demonstrates how to use AI Fairness 360 toolkit from IBM to identify & mitigate bias in the AI models. This approach will help the business to take fair decisions on different aspects. We will be using the Fraud Prediction dataset to demonstrate how the accuracy of AI models are impacted with the bias in the dataset and how this toolkit helps in removing the bias on the fly to ensure the decision making is not impacted. This approach of building AI models without bias has wider applicability for the developers and can be used to solve multitude of use cases under different domains.
 
 
- [Unveiling Machine's Fraud Prediction Decision with AI Explainability 360](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5285): The Second Code Pattern highlights the use of the AI explainability 360 toolkits to demystify the decisions taken by the machine learning model to gain better insights and explainability which not only help the policy-makers, data scientists to develop trusted explainable AI applications but also the general public for transparency. To demonstrate the use of the AI Explainability 360 Toolkit, we are using the existing Fraud Detection Code Pattern showcasing, explaining the AIX360 Algorithms, and also guide the practitioner on choosing an appropriate explanation method or algorithm depending upon the type of customer(Data Scientist, General Public, SME, Policy Maker) that needs an explanation of the model.  This Code Pattern will also demonstrate the use of ART(Adversarial Robustness 360 Toolkit) to defend and evaluate Machine Learning models and applications against the adversarial threats of Evasion, Poisoning, Extraction, and Inference.
+ - [Unveiling Machine's Fraud Prediction Decision with AI Explainability 360](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5285): The Second Code Pattern highlights the use of the AI explainability 360 toolkits to demystify the decisions taken by the machine learning model to gain better insights and explainability which not only help the policy-makers, data scientists to develop trusted explainable AI applications but also the general public for transparency. To demonstrate the use of the AI Explainability 360 Toolkit, we are using the existing Fraud Detection Code Pattern showcasing, explaining the AIX360 Algorithms, and also guide the practitioner on choosing an appropriate explanation method or algorithm depending upon the type of customer(Data Scientist, General Public, SME, Policy Maker) that needs an explanation of the model.  This Code Pattern will also demonstrate the use of ART(Adversarial Robustness 360 Toolkit) to defend and evaluate Machine Learning models and applications against the adversarial threats of Evasion, Poisoning, Extraction, and Inference. The Code Pattern contains a self-explanatory notebook illustrates following algorithms from the kit:- 
+ 
+#### 1) Protodash Explainer
+`This gives the profile of the instances similar to each other who have no fraud risk to the loan office.`
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Protodash.png)
+
+#### 2) Contrastive Explanations Method (CEM) algorithm using AI Explainability 360 on Fraud Data
+`The above results show that the customer should have 'less loan Amount', 'Loan_Term' for it to classified as No-Fraud-risk.`
+
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/CEM.png)
+
+#### 3) Unveiling Fraud Detection AI Model for Data Scientist using Boolean Rule Column Generation explainer
+`The results shows the rules identified by the model in the data to a data Scientist.`
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Boolean_.png)
+
+### 4) Adversarial-Robustness-Toolbox for LightGBM. 
+`This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data.`
+
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/ART.png)
 
 
-[Demonstrate fairness, explainability & robustness](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5284):  The final one demonstrates how to use AI 360 toolkit for creating an end to end pipeline for AI models by demonstrating fairness, eliminate bias, make the models explainable & showcase the robustness of the models. We will take a binary classification usecase to demonstrate all these features of AI 360 toolkit which will help the production deployed models to seamlessly work without any issues. This series will help the stakeholders, developers to understand the AI model life cycle completely and can take informed decisions. The black box of AI models will be made transparent, bias free, robust & explainable to the end users. This Code Pattern will be very helpful for developers to explore the open sourced IBM AI 360 toolkit on IBM platform to solve multiple usecases under different domains.
+
+- [Demonstrate fairness, explainability & robustness](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5284):  The final one demonstrates how to use AI 360 toolkit for creating an end to end pipeline for AI models by demonstrating fairness, eliminate bias, make the models explainable & showcase the robustness of the models. We will take a binary classification usecase to demonstrate all these features of AI 360 toolkit which will help the production deployed models to seamlessly work without any issues. This series will help the stakeholders, developers to understand the AI model life cycle completely and can take informed decisions. The black box of AI models will be made transparent, bias free, robust & explainable to the end users. This Code Pattern will be very helpful for developers to explore the open sourced IBM AI 360 toolkit on IBM platform to solve multiple usecases under different domains.
 
 
 
