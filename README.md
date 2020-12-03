@@ -5,9 +5,9 @@ The capabilities of AI are not hidden. Intelligence of machines is undergoing ma
 
 #### Building Trustworthy AI Pipelines stands on three Pillars:
 
-* Explainability: Explainability raises the curtain from behind the scenes of how an ML model makes its predictions. It gives an improved understanding of the model by clarifying the inner working of the model. It is essential to Data Scientists for detecting, avoiding, and removing its failure modes; to SMEs and Customers for earning public trust in the algorithm; and for introducing effective policies to regulate the technology.
-
 * Fairness: Unfair biases can exist in the data used to train the model as well as in the model’s own decision-making algorithm. Fairness emphasis on Identification and tackling of such biases introduced in the data. This will ensure that a model’s predictions are fair and do not unethically discriminate. 
+
+* Explainability: Explainability raises the curtain from behind the scenes of how an ML model makes its predictions. It gives an improved understanding of the model by clarifying the inner working of the model. It is essential to Data Scientists for detecting, avoiding, and removing its failure modes; to SMEs and Customers for earning public trust in the algorithm; and for introducing effective policies to regulate the technology.
 
 * Robustness: Robustness measures the stability of the algorithm performance when model. deployed in real world is attacked and noise in introduced in the training data. It characterizes how effective your algorithm is while being tested on the new independent (but similar) dataset. This will ensure that the algorithm of the model is able to handle the unseen, perturbed data. It addresses the questions of estimating uncertainties in its predictions and whether or not the model is robust to. 
 
@@ -15,8 +15,9 @@ The capabilities of AI are not hidden. Intelligence of machines is undergoing ma
 To build Trusted AI, IBM Research AI is developing [diverse approaches]( https://research.ibm.com/artificial-intelligence/trusted-ai/?_ga=2.53814376.134814594.1606471878-1093864575.1604559368) for how to achieve fairness, robustness, explainability, accountability, value alignment, and how to integrate them throughout the entire lifecycle of an AI application.
 
 ### Three-Open source Toolkits by IBM Research : 
-1.	[AI Explainability 360](http://aix360.mybluemix.net) - This extensible open source toolkit can help you comprehend how machine learning models predict labels by various means throughout the AI application lifecycle. Containing eight state-of-the-art algorithms for interpretable machine learning as well as metrics for explainability, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
-2.	[AI Fairness 360]( http://aif360.mybluemix.net/) - This extensible open-source toolkit can help you examine, report, and mitigate discrimination and bias in machine learning models throughout the AI application lifecycle. Containing over 70 fairness metrics and 10 state-of-the-art bias mitigation algorithms developed by the research community, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
+
+1.	[AI Fairness 360]( http://aif360.mybluemix.net/) - This extensible open-source toolkit can help you examine, report, and mitigate discrimination and bias in machine learning models throughout the AI application lifecycle. Containing over 70 fairness metrics and 10 state-of-the-art bias mitigation algorithms developed by the research community, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
+2.	[AI Explainability 360](http://aix360.mybluemix.net) - This extensible open source toolkit can help you comprehend how machine learning models predict labels by various means throughout the AI application lifecycle. Containing eight state-of-the-art algorithms for interpretable machine learning as well as metrics for explainability, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
 3.	[Adversarial Robustness 360 Toolbox](https://developer.ibm.com/open/projects/adversarial-robustness-toolbox/) — The Adversarial Robustness Toolbox is designed to support researchers and developers in creating novel defense techniques, as well as in deploying practical defense of real-world AI systems. Researchers can use the Adversarial Robustness Toolbox to benchmark novel defense against the state-of-the-art. For developers, the library provides interfaces which support the composition of comprehensive defense systems using individual methods as building blocks.
 
 
@@ -44,32 +45,18 @@ The Series demonstrates the AI 360 toolkit in detail and how do we use this IBM 
  - [Unveiling Machine's Fraud Prediction Decision with AI Explainability 360](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5285): The Second Code Pattern highlights the use of the AI explainability 360 toolkits to demystify the decisions taken by the machine learning model to gain better insights and explainability which not only help the policy-makers, data scientists to develop trusted explainable AI applications but also the general public for transparency. To demonstrate the use of the AI Explainability 360 Toolkit, we are using the existing Fraud Detection Code Pattern showcasing, explaining the AIX360 Algorithms, and also guide the practitioner on choosing an appropriate explanation method or algorithm depending upon the type of customer(Data Scientist, General Public, SME, Policy Maker) that needs an explanation of the model.  This Code Pattern will also demonstrate the use of ART(Adversarial Robustness 360 Toolkit) to defend and evaluate Machine Learning models and applications against the adversarial threats of Evasion, Poisoning, Extraction, and Inference. The Code Pattern contains a self-explanatory notebook illustrates following algorithms from the kit:- 
  
 #### 1) Protodash Explainer
-`This gives the profile of the instances similar to each other who have no fraud risk to the loan office.`
-![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Protodash.png)
+`Highlights the profile of similar instances classified 'no fraud risk' to the loan office.`
 
 #### 2) Contrastive Explanations Method (CEM) algorithm using AI Explainability 360 on Fraud Data
-`The above results show that the customer should have 'less loan Amount', 'Loan_Term' for it to classified as No-Fraud-risk.`
-
-![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/CEM.png)
+`This step explains the significant factors influencing the favorable outcome which is to be classified as No-Fraud-risk.`
 
 #### 3) Unveiling Fraud Detection AI Model for Data Scientist using Boolean Rule Column Generation explainer
-`The results shows the rules identified by the model in the data to a data Scientist.`
-![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Boolean_.png)
+`The results shows the rules using decision trees which are identified by the model to a data Scientist or ML engineer.`
 
 ### 4) Adversarial-Robustness-Toolbox for LightGBM. 
-`This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data.`
-
-![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/ART.png)
+`This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data. This step shows how robust the model is for making predictions using new data`
 
 
-
-- [Demonstrate fairness, explainability & robustness](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5284):  The final one demonstrates how to use AI 360 toolkit for creating an end to end pipeline for AI models by demonstrating fairness, eliminate bias, make the models explainable & showcase the robustness of the models. We will take a binary classification usecase to demonstrate all these features of AI 360 toolkit which will help the production deployed models to seamlessly work without any issues. This series will help the stakeholders, developers to understand the AI model life cycle completely and can take informed decisions. The black box of AI models will be made transparent, bias free, robust & explainable to the end users. This Code Pattern will be very helpful for developers to explore the open sourced IBM AI 360 toolkit on IBM platform to solve multiple usecases under different domains.
-
-
-
-
-
-
-
+**[Demonstrate fairness, explainability & robustness in a single notebook](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5284):** The final code pattern demonstrates how to use AI 360 toolkit for creating an end to end pipeline for AI models by demonstrating fairness, eliminate bias, make the models explainable & showcase the robustness of the models. We will take a binary classification usecase to demonstrate all these features of AI 360 toolkit which will help the production deployed models to seamlessly work without any issues. This series will help the stakeholders, developers to understand the AI model life cycle completely and can take informed decisions. The black box of AI models will be made transparent, bias free, robust & explainable to the end users. This Code Pattern will be very helpful for developers, ML engineers to explore the open sourced IBM AI 360 toolkit on IBM platform to solve multiple usecases under different domains.
 
 
