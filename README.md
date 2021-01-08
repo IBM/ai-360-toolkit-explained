@@ -59,4 +59,6 @@ The Series demonstrates the AI 360 toolkit in detail and how do we use this IBM 
 
 **[Demonstrate fairness, explainability & robustness in a single notebook](https://github.ibm.com/IBMCode/IBMCodeContent/issues/5284):** The final code pattern demonstrates how to use AI 360 toolkit for creating an end to end pipeline for AI models by demonstrating fairness, eliminate bias, make the models explainable & showcase the robustness of the models. We will take a binary classification usecase to demonstrate all these features of AI 360 toolkit which will help the production deployed models to seamlessly work without any issues. This series will help the stakeholders, developers to understand the AI model life cycle completely and can take informed decisions. The black box of AI models will be made transparent, bias free, robust & explainable to the end users. This Code Pattern will be very helpful for developers, ML engineers to explore the open sourced IBM AI 360 toolkit on IBM platform to solve multiple usecases under different domains.
 
+### Related Links
 
+`To be updated after the publish of other code patterns in this series.`
