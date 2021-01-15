@@ -61,4 +61,6 @@ The Series demonstrates the AI 360 toolkit in detail and how do we use this IBM 
 
 ### Related Links
 
-`To be updated after the publish of other code patterns in this series.`
+[Bias mitigation of AI models](https://github.com/IBM/bias-mitigation-of-machine-learning-models-using-aif360)
+[Make AI models explainable](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360)
+[Explore fairness, explainability & robustness on AI models](https://github.com/IBM/predict-an-event-with-fairness-explainability-robustness-using-ai-360-toolkit)
